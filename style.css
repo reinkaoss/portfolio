@@ -48,7 +48,8 @@ nav {
 
 nav .navLinks a {
     text-decoration: none;
-    color: var(--mainPink)
+    color: var(--mainPink);
+    padding: 5px;
   }
 
 .navTitle {
@@ -60,7 +61,7 @@ nav .navLinks a:hover {
     color: var(--brightPink);
     background-color: var(--lightPink);
     border-radius: 2px;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* About Section */
@@ -87,46 +88,7 @@ nav .navLinks a:hover {
     text-align: center;
 }
 
-/* My Info Section */
 
-.myInfo {
-    display: flex;
-    color: var(--lightPink);
-    align-content: center;
-    justify-content: center;
-   
-}
-
-.myInfo:hover {
-    background-color: green;
-}
-
-.phone, .github, .email, .linkedin {
-   /* width:  fit-content;
-    height: 50px;
-    transform: skew(10deg);
-    background-color: var(--brightPink);
-    color: var(--lightPink);
-    justify-content: center;
-    display: flex;
-    align-items: center; */
-    margin: 10px;
-    padding: 5px; 
-}
-
-.email {
-    /* content: url('https://api.iconify.design/material-symbols/mark-email-read-outline-sharp.svg'); */
-}
-.linkedin {
-    /* content: url('https://api.iconify.design/ri/linkedin-box-line.svg'); */
-}
-.github {
-    /* content: url('https://api.iconify.design/akar-icons/github-fill.svg'); */
-}
-
-.phone {
-    /* content: url('https://api.iconify.design/material-symbols/perm-phone-msg-rounded.svg'); */
-}
 
 /* Skills Section */
 .skillsEl {
@@ -143,7 +105,7 @@ nav .navLinks a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 40px;
     background-color: var(--darkGray);
     border-radius: 10px;
     box-shadow: 1px 1px 2px var(--brightPink);
@@ -187,6 +149,23 @@ nav .navLinks a:hover {
     justify-content: center;
     height: 100vh;
     color: var(--lightPink);
+    flex-direction: column;
+}
+
+.worksEl {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+}
+
+.worksEl img, .worksElSec img {
+    width: 100px;
+}
+
+.worksElSec {
+    margin: 20px;
+    display: flex;
+    padding: 20px;
 }
 
 
@@ -200,3 +179,85 @@ nav .navLinks a:hover {
     height: 100vh;
     color: var(--lightPink);
 }
+
+.contactForm {
+    background-color: var(--darkGray);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#contact {
+    text-align: center;
+    font-size: 24px;
+}
+
+form {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0;
+    display: flex;
+    box-shadow: none;
+    border: 1px solid #777;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #777;
+}
+
+.formBtn {
+        text-decoration: none;
+        color: var(--lightPink);
+        background-color: var(--mainPink);
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+
+    .formBtn:hover {
+        color: var(--brightPink);
+        background-color: var(--lightPink);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+  .fa-github {
+    background: white;
+    color: var(--darkGray);
+    padding: 10px;
+    border-radius: 3px;
+  }
+
